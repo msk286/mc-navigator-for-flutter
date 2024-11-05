@@ -13,7 +13,7 @@ final class NamedRoutesActions with PopActions implements NavigationActions {
       : _navigatorState = Navigator.of(ctx, rootNavigator: isRoot);
 
   @override
-  String get route => _data.route.routeSlug;
+  String get route => _data.route.path;
 
   @override
   NavigatorState get navigatorState => _navigatorState;

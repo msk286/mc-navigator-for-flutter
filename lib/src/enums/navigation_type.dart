@@ -7,4 +7,10 @@ enum NavigationType {
   ;
 
   factory NavigationType.main() => NavigationType.materialPageRoute;
+
+  bool get isMaterialPageRoute => this == materialPageRoute;
+
+  bool get isCupertinoPageRoute => this == cupertinoPageRoute;
+
+  bool get isNamedRoute => this == namedRoute;
 }

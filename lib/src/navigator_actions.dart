@@ -69,4 +69,6 @@ class NavigatorActions implements NavigationActions {
 
   @override
   String get route => _routeData.route.routeSlug;
+
+  static NavigationType getType() => _type;
 }
